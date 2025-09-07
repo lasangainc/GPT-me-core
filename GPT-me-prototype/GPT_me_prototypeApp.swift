@@ -13,5 +13,6 @@ struct GPT_me_prototypeApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowStyle(.hiddenTitleBar)
     }
 }
