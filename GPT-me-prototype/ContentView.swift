@@ -13,6 +13,7 @@ import FoundationModels
 struct ContentView: View {
     @State private var conversations: [Conversation] = []
     @State private var selection: Conversation.ID?
+    @State private var hoveredConversationID: Conversation.ID?
 
     var body: some View {
         NavigationSplitView {
@@ -55,6 +56,21 @@ struct ContentView: View {
                             }
                             .buttonStyle(GlassRowButtonStyle(isSelected: selection == conversation.id))
                             .listRowInsets(EdgeInsets(top: 6, leading: 4, bottom: 6, trailing: 4))
+                            .onHover { isHovering in
+                                hoveredConversationID = isHovering ? conversation.id : (hoveredConversationID == conversation.id ? nil : hoveredConversationID)
+                            }
+                            .overlay(alignment: .trailing) {
+                                Button(role: .destructive) {
+                                    delete(conversation)
+                                } label: {
+                                    Image(systemName: "trash")
+                                        .foregroundStyle(.secondary)
+                                }
+                                .buttonStyle(.plain)
+                                .opacity(hoveredConversationID == conversation.id ? 1 : 0)
+                                .padding(.trailing, 6)
+                                .animation(.easeOut(duration: 0.12), value: hoveredConversationID)
+                            }
                             .contextMenu {
                                 Button(role: .destructive) { delete(conversation) } label: {
                                     Label("Delete", systemImage: "trash")
@@ -90,6 +106,8 @@ struct ContentView: View {
                 .background(.thinMaterial)
             }
         }
+        .onAppear { loadConversations() }
+        .onChange(of: conversations) { _, _ in saveConversations() }
     }
 
     private func createConversation() {
@@ -108,6 +126,36 @@ struct ContentView: View {
     private func delete(atOffsets offsets: IndexSet) {
         conversations.remove(atOffsets: offsets)
         if !conversations.contains(where: { $0.id == selection }) { selection = conversations.first?.id }
+    }
+
+    private func conversationsFileURL() -> URL {
+        let directory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        return directory.appendingPathComponent("conversations.json")
+    }
+
+    private func saveConversations() {
+        do {
+            let encoder = JSONEncoder()
+            encoder.outputFormatting = [.prettyPrinted]
+            let data = try encoder.encode(conversations)
+            try data.write(to: conversationsFileURL(), options: [.atomic])
+        } catch {
+            // Silently ignore for now; could add logging
+        }
+    }
+
+    private func loadConversations() {
+        let url = conversationsFileURL()
+        guard FileManager.default.fileExists(atPath: url.path) else { return }
+        do {
+            let data = try Data(contentsOf: url)
+            let decoder = JSONDecoder()
+            let loaded = try decoder.decode([Conversation].self, from: data)
+            conversations = loaded
+            if let first = loaded.first { selection = first.id }
+        } catch {
+            // Silently ignore for now; could add logging
+        }
     }
 }
 
@@ -174,15 +222,15 @@ private struct GlassRowButtonStyle: ButtonStyle {
     }
 }
 
-private struct ChatMessage: Identifiable, Hashable {
-    enum Role { case user, assistant }
+private struct ChatMessage: Identifiable, Hashable, Codable {
+    enum Role: String, Codable { case user, assistant }
     var id: UUID = UUID()
     let role: Role
     var text: String
     let date: Date
 }
 
-private struct Conversation: Identifiable, Hashable {
+private struct Conversation: Identifiable, Hashable, Codable {
     let id: UUID
     var title: String
     var messages: [ChatMessage]
@@ -256,12 +304,12 @@ private struct ChatView: View {
                 } label: {
                     Image(systemName: "paperplane.fill")
                         .symbolRenderingMode(.hierarchical)
-                        .frame(width: 32, height: 32)
+                        .frame(width: 24, height: 24)
                         .foregroundStyle(.tint)
                 }
                 .buttonStyle(.borderedProminent)
                 .buttonBorderShape(.capsule)
-                .controlSize(.large)
+                .controlSize(.small)
             }
             .padding(12)
             .frame(maxWidth: .infinity)
