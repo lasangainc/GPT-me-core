@@ -333,7 +333,16 @@ private struct ChatBubble: View {
 
     private var bubble: some View {
         let isUser = message.role == .user
-        return Text(message.text)
+        let parsed: AttributedString = (try? AttributedString(
+            markdown: message.text,
+            options: .init(
+                interpretedSyntax: .inlineOnlyPreservingWhitespace,
+                failurePolicy: .returnPartiallyParsedIfPossible
+            )
+        )) ?? AttributedString(message.text)
+
+        return Text(parsed)
+            .textSelection(.enabled)
             .foregroundStyle(.primary)
             .padding(.vertical, 10)
             .padding(.horizontal, 12)
