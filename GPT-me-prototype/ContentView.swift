@@ -194,9 +194,10 @@ private struct ChatView: View {
     var onFirstUserMessage: (String) -> Void = { _ in }
     var aiResponder: AIResponder? = nil
     @State private var inputText: String = ""
+    @State private var inputBarHeight: CGFloat = 0
 
     var body: some View {
-        VStack(spacing: 0) {
+        ZStack(alignment: .bottom) {
             ScrollViewReader { proxy in
                 ScrollView {
                     LazyVStack(alignment: .leading, spacing: 12) {
@@ -217,6 +218,7 @@ private struct ChatView: View {
                     )
                     .padding(.horizontal, 16)
                     .padding(.vertical, 16)
+                    .padding(.bottom, inputBarHeight + 24)
                 }
                 .background(.thinMaterial)
                 .onChange(of: messages.count) { _, _ in
@@ -231,8 +233,7 @@ private struct ChatView: View {
                 }
             }
 
-            Divider()
-
+            // Floating input bar overlay
             HStack(spacing: 8) {
                 HStack(spacing: 8) {
                     TextField("Message", text: $inputText)
@@ -243,7 +244,7 @@ private struct ChatView: View {
                 .padding(.horizontal, 12)
                 .background(
                     RoundedRectangle(cornerRadius: 16, style: .continuous)
-                        .fill(.ultraThinMaterial)
+                        .glassEffect()
                 )
                 .overlay(
                     RoundedRectangle(cornerRadius: 16, style: .continuous)
@@ -263,7 +264,16 @@ private struct ChatView: View {
                 .controlSize(.large)
             }
             .padding(12)
-            .background(.thinMaterial)
+            .frame(maxWidth: .infinity)
+            .background(
+                GeometryReader { geo in
+                    Color.clear
+                        .preference(key: InputBarHeightKey.self, value: geo.size.height)
+                }
+            )
+            .onPreferenceChange(InputBarHeightKey.self) { height in
+                inputBarHeight = height
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.thinMaterial)
@@ -313,6 +323,13 @@ private struct ChatView: View {
                 messages.append(ChatMessage(role: .assistant, text: replyText, date: Date()))
             }
         }
+    }
+}
+
+private struct InputBarHeightKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = max(value, nextValue())
     }
 }
 
