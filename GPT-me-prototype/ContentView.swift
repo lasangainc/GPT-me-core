@@ -108,6 +108,13 @@ struct ContentView: View {
         }
         .onAppear { loadConversations() }
         .onChange(of: conversations) { _, _ in saveConversations() }
+        .toolbar {
+            ToolbarItem(placement: .primaryAction) {
+                Button(action: {}) {
+                    Image(systemName: "gear")
+                }
+            }
+        }
     }
 
     private func createConversation() {
@@ -267,6 +274,7 @@ private struct ChatView: View {
                     .padding(.horizontal, 16)
                     .padding(.vertical, 16)
                     .padding(.bottom, inputBarHeight + 24)
+                    
                 }
                 .background(.thinMaterial)
                 .onChange(of: messages.count) { _, _ in
@@ -288,16 +296,16 @@ private struct ChatView: View {
                         .textFieldStyle(.plain)
                         .font(.body)
                 }
+                
                 .padding(.vertical, 8)
                 .padding(.horizontal, 12)
                 .background(
                     RoundedRectangle(cornerRadius: 16, style: .continuous)
-                        .glassEffect()
+                        
+                        
                 )
-                .overlay(
-                    RoundedRectangle(cornerRadius: 16, style: .continuous)
-                        .strokeBorder(Color.white.opacity(0.15), lineWidth: 0.75)
-                )
+                .glassEffect()
+
 
                 Button {
                     send()
@@ -305,12 +313,13 @@ private struct ChatView: View {
                     Image(systemName: "paperplane.fill")
                         .symbolRenderingMode(.hierarchical)
                         .frame(width: 24, height: 24)
-                        .foregroundStyle(.tint)
+                        
                 }
                 .buttonStyle(.borderedProminent)
                 .buttonBorderShape(.capsule)
                 .controlSize(.small)
             }
+            .glassEffect()
             .padding(12)
             .frame(maxWidth: .infinity)
             .background(
@@ -454,7 +463,7 @@ final class AIResponder {
         }
         #else
         // Fallback when FoundationModels is unavailable
-        return "Mock: \(userText)"
+        return "Apple Intellegence is not enabled! Please enable it in settings to use GPTme."
         #endif
     }
 
