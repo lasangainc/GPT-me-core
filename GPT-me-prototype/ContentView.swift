@@ -274,7 +274,6 @@ private struct ChatView: View {
                     .padding(.horizontal, 16)
                     .padding(.vertical, 16)
                     .padding(.bottom, inputBarHeight + 24)
-                    
                 }
                 .background(.thinMaterial)
                 .onChange(of: messages.count) { _, _ in
@@ -296,15 +295,12 @@ private struct ChatView: View {
                         .textFieldStyle(.plain)
                         .font(.body)
                 }
-                
                 .padding(.vertical, 8)
                 .padding(.horizontal, 12)
                 .background(
                     RoundedRectangle(cornerRadius: 16, style: .continuous)
-                        
-                        
+                        .glassEffect()
                 )
-                .glassEffect()
 
 
                 Button {
@@ -319,7 +315,6 @@ private struct ChatView: View {
                 .buttonBorderShape(.capsule)
                 .controlSize(.small)
             }
-            .glassEffect()
             .padding(12)
             .frame(maxWidth: .infinity)
             .background(
