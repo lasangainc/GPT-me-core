@@ -1,6 +1,6 @@
 //
 //  GPT_me_prototypeTests.swift
-//  GPT-me-prototypeTests
+//  GPTmeTests
 //
 //  Created by Benji on 2025-09-07.
 //

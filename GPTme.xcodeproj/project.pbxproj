@@ -12,37 +12,37 @@
 			containerPortal = B13F74102E6D78360063B89A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B13F74172E6D78360063B89A;
-			remoteInfo = "GPT-me-prototype";
+			remoteInfo = "GPTme";
 		};
 		B13F74302E6D78380063B89A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B13F74102E6D78360063B89A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B13F74172E6D78360063B89A;
-			remoteInfo = "GPT-me-prototype";
+			remoteInfo = "GPTme";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B13F74182E6D78360063B89A /* GPT-me-prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPT-me-prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B13F74252E6D78380063B89A /* GPT-me-prototypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GPT-me-prototypeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B13F742F2E6D78380063B89A /* GPT-me-prototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GPT-me-prototypeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13F74182E6D78360063B89A /* GPTme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPTme.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13F74252E6D78380063B89A /* GPTmeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GPTmeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13F742F2E6D78380063B89A /* GPTmeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GPTmeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		B13F741A2E6D78360063B89A /* GPT-me-prototype */ = {
+		B13F741A2E6D78360063B89A /* GPTme */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "GPT-me-prototype";
+			path = "GPTme";
 			sourceTree = "<group>";
 		};
-		B13F74282E6D78380063B89A /* GPT-me-prototypeTests */ = {
+		B13F74282E6D78380063B89A /* GPTmeTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "GPT-me-prototypeTests";
+			path = "GPTmeTests";
 			sourceTree = "<group>";
 		};
-		B13F74322E6D78380063B89A /* GPT-me-prototypeUITests */ = {
+		B13F74322E6D78380063B89A /* GPTmeUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "GPT-me-prototypeUITests";
+			path = "GPTmeUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +75,9 @@
 		B13F740F2E6D78360063B89A = {
 			isa = PBXGroup;
 			children = (
-				B13F741A2E6D78360063B89A /* GPT-me-prototype */,
-				B13F74282E6D78380063B89A /* GPT-me-prototypeTests */,
-				B13F74322E6D78380063B89A /* GPT-me-prototypeUITests */,
+				B13F741A2E6D78360063B89A /* GPTme */,
+				B13F74282E6D78380063B89A /* GPTmeTests */,
+				B13F74322E6D78380063B89A /* GPTmeUITests */,
 				B13F74192E6D78360063B89A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +85,9 @@
 		B13F74192E6D78360063B89A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B13F74182E6D78360063B89A /* GPT-me-prototype.app */,
-				B13F74252E6D78380063B89A /* GPT-me-prototypeTests.xctest */,
-				B13F742F2E6D78380063B89A /* GPT-me-prototypeUITests.xctest */,
+				B13F74182E6D78360063B89A /* GPTme.app */,
+				B13F74252E6D78380063B89A /* GPTmeTests.xctest */,
+				B13F742F2E6D78380063B89A /* GPTmeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B13F74172E6D78360063B89A /* GPT-me-prototype */ = {
+		B13F74172E6D78360063B89A /* GPTme */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B13F74392E6D78380063B89A /* Build configuration list for PBXNativeTarget "GPT-me-prototype" */;
+			buildConfigurationList = B13F74392E6D78380063B89A /* Build configuration list for PBXNativeTarget "GPTme" */;
 			buildPhases = (
 				B13F74142E6D78360063B89A /* Sources */,
 				B13F74152E6D78360063B89A /* Frameworks */,
@@ -108,18 +108,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				B13F741A2E6D78360063B89A /* GPT-me-prototype */,
+				B13F741A2E6D78360063B89A /* GPTme */,
 			);
-			name = "GPT-me-prototype";
+			name = "GPTme";
 			packageProductDependencies = (
 			);
-			productName = "GPT-me-prototype";
-			productReference = B13F74182E6D78360063B89A /* GPT-me-prototype.app */;
+			productName = "GPTme";
+			productReference = B13F74182E6D78360063B89A /* GPTme.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B13F74242E6D78380063B89A /* GPT-me-prototypeTests */ = {
+		B13F74242E6D78380063B89A /* GPTmeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B13F743C2E6D78380063B89A /* Build configuration list for PBXNativeTarget "GPT-me-prototypeTests" */;
+			buildConfigurationList = B13F743C2E6D78380063B89A /* Build configuration list for PBXNativeTarget "GPTmeTests" */;
 			buildPhases = (
 				B13F74212E6D78380063B89A /* Sources */,
 				B13F74222E6D78380063B89A /* Frameworks */,
@@ -131,18 +131,18 @@
 				B13F74272E6D78380063B89A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				B13F74282E6D78380063B89A /* GPT-me-prototypeTests */,
+				B13F74282E6D78380063B89A /* GPTmeTests */,
 			);
-			name = "GPT-me-prototypeTests";
+			name = "GPTmeTests";
 			packageProductDependencies = (
 			);
-			productName = "GPT-me-prototypeTests";
-			productReference = B13F74252E6D78380063B89A /* GPT-me-prototypeTests.xctest */;
+			productName = "GPTmeTests";
+			productReference = B13F74252E6D78380063B89A /* GPTmeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B13F742E2E6D78380063B89A /* GPT-me-prototypeUITests */ = {
+		B13F742E2E6D78380063B89A /* GPTmeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B13F743F2E6D78380063B89A /* Build configuration list for PBXNativeTarget "GPT-me-prototypeUITests" */;
+			buildConfigurationList = B13F743F2E6D78380063B89A /* Build configuration list for PBXNativeTarget "GPTmeUITests" */;
 			buildPhases = (
 				B13F742B2E6D78380063B89A /* Sources */,
 				B13F742C2E6D78380063B89A /* Frameworks */,
@@ -154,13 +154,13 @@
 				B13F74312E6D78380063B89A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				B13F74322E6D78380063B89A /* GPT-me-prototypeUITests */,
+				B13F74322E6D78380063B89A /* GPTmeUITests */,
 			);
-			name = "GPT-me-prototypeUITests";
+			name = "GPTmeUITests";
 			packageProductDependencies = (
 			);
-			productName = "GPT-me-prototypeUITests";
-			productReference = B13F742F2E6D78380063B89A /* GPT-me-prototypeUITests.xctest */;
+			productName = "GPTmeUITests";
+			productReference = B13F742F2E6D78380063B89A /* GPTmeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B13F74132E6D78360063B89A /* Build configuration list for PBXProject "GPT-me-prototype" */;
+			buildConfigurationList = B13F74132E6D78360063B89A /* Build configuration list for PBXProject "GPTme" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B13F74172E6D78360063B89A /* GPT-me-prototype */,
-				B13F74242E6D78380063B89A /* GPT-me-prototypeTests */,
-				B13F742E2E6D78380063B89A /* GPT-me-prototypeUITests */,
+				B13F74172E6D78360063B89A /* GPTme */,
+				B13F74242E6D78380063B89A /* GPTmeTests */,
+				B13F742E2E6D78380063B89A /* GPTmeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		B13F74272E6D78380063B89A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B13F74172E6D78360063B89A /* GPT-me-prototype */;
+			target = B13F74172E6D78360063B89A /* GPTme */;
 			targetProxy = B13F74262E6D78380063B89A /* PBXContainerItemProxy */;
 		};
 		B13F74312E6D78380063B89A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B13F74172E6D78360063B89A /* GPT-me-prototype */;
+			target = B13F74172E6D78360063B89A /* GPTme */;
 			targetProxy = B13F74302E6D78380063B89A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -411,7 +411,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wss.GPT-me-prototype";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wss.GPTme";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -445,7 +445,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wss.GPT-me-prototype";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wss.GPTme";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -467,14 +467,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wss.GPT-me-prototypeTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wss.GPTmeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPT-me-prototype.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GPT-me-prototype";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPTme.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GPTme";
 			};
 			name = Debug;
 		};
@@ -488,14 +488,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wss.GPT-me-prototypeTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wss.GPTmeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPT-me-prototype.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GPT-me-prototype";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPTme.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GPTme";
 			};
 			name = Release;
 		};
@@ -507,14 +507,14 @@
 				DEVELOPMENT_TEAM = 5G7L6FK6W7;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wss.GPT-me-prototypeUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wss.GPTmeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "GPT-me-prototype";
+				TEST_TARGET_NAME = "GPTme";
 			};
 			name = Debug;
 		};
@@ -526,21 +526,21 @@
 				DEVELOPMENT_TEAM = 5G7L6FK6W7;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wss.GPT-me-prototypeUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wss.GPTmeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "GPT-me-prototype";
+				TEST_TARGET_NAME = "GPTme";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B13F74132E6D78360063B89A /* Build configuration list for PBXProject "GPT-me-prototype" */ = {
+		B13F74132E6D78360063B89A /* Build configuration list for PBXProject "GPTme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B13F74372E6D78380063B89A /* Debug */,
@@ -549,7 +549,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B13F74392E6D78380063B89A /* Build configuration list for PBXNativeTarget "GPT-me-prototype" */ = {
+		B13F74392E6D78380063B89A /* Build configuration list for PBXNativeTarget "GPTme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B13F743A2E6D78380063B89A /* Debug */,
@@ -558,7 +558,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B13F743C2E6D78380063B89A /* Build configuration list for PBXNativeTarget "GPT-me-prototypeTests" */ = {
+		B13F743C2E6D78380063B89A /* Build configuration list for PBXNativeTarget "GPTmeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B13F743D2E6D78380063B89A /* Debug */,
@@ -567,7 +567,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B13F743F2E6D78380063B89A /* Build configuration list for PBXNativeTarget "GPT-me-prototypeUITests" */ = {
+		B13F743F2E6D78380063B89A /* Build configuration list for PBXNativeTarget "GPTmeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B13F74402E6D78380063B89A /* Debug */,

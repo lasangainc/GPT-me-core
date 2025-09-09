@@ -1,6 +1,6 @@
 //
 //  GPT_me_prototypeApp.swift
-//  GPT-me-prototype
+//  GPTme
 //
 //  Created by Benji on 2025-09-07.
 //
