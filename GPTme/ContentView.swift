@@ -312,11 +312,12 @@ private struct ChatView: View {
                     Image(systemName: "paperplane.fill")
                         .symbolRenderingMode(.hierarchical)
                         .frame(width: 24, height: 24)
-                        .foregroundStyle(.tint)
+                        
                 }
                 .buttonStyle(.borderedProminent)
                 .buttonBorderShape(.capsule)
                 .controlSize(.small)
+                .glassEffect()
             }
             .padding(12)
             .frame(maxWidth: .infinity)
@@ -461,7 +462,7 @@ final class AIResponder {
         }
         #else
         // Fallback when FoundationModels is unavailable
-        return "Mock: \(userText)"
+        return "Apple Intellegence isnt enabled! Please enable it in your settings!!"
         #endif
     }
 

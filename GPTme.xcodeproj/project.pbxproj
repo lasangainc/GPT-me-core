@@ -12,37 +12,37 @@
 			containerPortal = B13F74102E6D78360063B89A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B13F74172E6D78360063B89A;
-			remoteInfo = "GPTme";
+			remoteInfo = GPTme;
 		};
 		B13F74302E6D78380063B89A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B13F74102E6D78360063B89A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B13F74172E6D78360063B89A;
-			remoteInfo = "GPTme";
+			remoteInfo = GPTme;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B13F74182E6D78360063B89A /* GPTme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPTme.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B13F74252E6D78380063B89A /* GPTmeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GPTmeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B13F742F2E6D78380063B89A /* GPTmeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GPTmeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13F74182E6D78360063B89A /* GPTme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPTme.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13F74252E6D78380063B89A /* GPTmeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPTmeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13F742F2E6D78380063B89A /* GPTmeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPTmeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B13F741A2E6D78360063B89A /* GPTme */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "GPTme";
+			path = GPTme;
 			sourceTree = "<group>";
 		};
 		B13F74282E6D78380063B89A /* GPTmeTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "GPTmeTests";
+			path = GPTmeTests;
 			sourceTree = "<group>";
 		};
 		B13F74322E6D78380063B89A /* GPTmeUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "GPTmeUITests";
+			path = GPTmeUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -110,10 +110,10 @@
 			fileSystemSynchronizedGroups = (
 				B13F741A2E6D78360063B89A /* GPTme */,
 			);
-			name = "GPTme";
+			name = GPTme;
 			packageProductDependencies = (
 			);
-			productName = "GPTme";
+			productName = GPTme;
 			productReference = B13F74182E6D78360063B89A /* GPTme.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -133,10 +133,10 @@
 			fileSystemSynchronizedGroups = (
 				B13F74282E6D78380063B89A /* GPTmeTests */,
 			);
-			name = "GPTmeTests";
+			name = GPTmeTests;
 			packageProductDependencies = (
 			);
-			productName = "GPTmeTests";
+			productName = GPTmeTests;
 			productReference = B13F74252E6D78380063B89A /* GPTmeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -156,10 +156,10 @@
 			fileSystemSynchronizedGroups = (
 				B13F74322E6D78380063B89A /* GPTmeUITests */,
 			);
-			name = "GPTmeUITests";
+			name = GPTmeUITests;
 			packageProductDependencies = (
 			);
-			productName = "GPTmeUITests";
+			productName = GPTmeUITests;
 			productReference = B13F742F2E6D78380063B89A /* GPTmeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -411,7 +411,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wss.GPTme";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wss.GPTme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -445,7 +445,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wss.GPTme";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wss.GPTme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -467,7 +467,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wss.GPTmeTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wss.GPTmeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -488,7 +488,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wss.GPTmeTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wss.GPTmeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -507,14 +507,14 @@
 				DEVELOPMENT_TEAM = 5G7L6FK6W7;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wss.GPTmeUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wss.GPTmeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "GPTme";
+				TEST_TARGET_NAME = GPTme;
 			};
 			name = Debug;
 		};
@@ -526,14 +526,14 @@
 				DEVELOPMENT_TEAM = 5G7L6FK6W7;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wss.GPTmeUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wss.GPTmeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "GPTme";
+				TEST_TARGET_NAME = GPTme;
 			};
 			name = Release;
 		};
